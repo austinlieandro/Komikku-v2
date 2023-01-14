@@ -1,0 +1,7 @@
+  <ion-card *ngFor="let komiks of komik" >
+    <ion-card-content>
+      <ion-img routerLink="/detail/{{komiks.id}}" src="{{komiks.url_poster}}">
+      </ion-img>
+      <h4>{{komiks.judul}}</h4>
+    </ion-card-content>
+  </ion-card>
