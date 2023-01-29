@@ -3,25 +3,10 @@
     <ion-list *ngFor="let kategoris of kategori; let i = index">
       <ion-item button detail="true">
         <ion-label>{{ kategoris.nama }}</ion-label>
-
       </ion-item>
     </ion-list>
   </ion-card-content>
 </ion-card>
-
-<ion-item button *ngFor="let k of komik"}>
-  <ion-thumbnail slot="start">
-    <img src="{{ k.id }}.{{ k.url_poster }}" routerLink="/detailkomik/{{ k.id }}" />
-  </ion-thumbnail>
-  <ion-label>
-    {{ k.judul }}
-  </ion-label>
-</ion-item>
-<style>
-  ion-thumbnail {
-    --border-radius: 7px;
-  }
-</style>
 
 <ion-card>
   <ion-card-content>
